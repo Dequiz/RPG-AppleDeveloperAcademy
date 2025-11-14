@@ -6,7 +6,8 @@ class Heroi {
  var xp    :Int
  var vidaMaxima :Int
  var jaCurou = false
- var contadorInimigos = 0
+ var dinheiro : Int = 0
+//  var inventario : Set<Item> 
 
 
   init(nome:String, vida:Int,forca:Int,nivel:Int,xp:Int,vidaMaxima:Int){

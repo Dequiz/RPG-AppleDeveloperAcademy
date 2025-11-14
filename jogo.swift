@@ -3,13 +3,34 @@
 
 
 func criarPersonagem() -> Heroi{
+    print("Digite o seu nome aventureiro")
 let iniciarPersonagem = readLine() ?? ""
 let personagem = Heroi(nome: iniciarPersonagem, vida: 20,forca: 100000000,nivel: 1,xp: 0,vidaMaxima: 20)
+print("Seja bem vindo ao sonho \(personagem.nome)")
 return personagem
 }
-func criarInimigo(nomeMostro:String, vidaMonstro: Int, forcaMonstro:Int, rangeXP:ClosedRange<Int>) -> Inimigo{
-    let inimigo = Inimigo(nome: nomeMostro, vida: vidaMonstro, forca: forcaMonstro, exp: Int.random(in: rangeXP))
+func criarInimigo(nomeMostro:String, vidaMonstro: Int, forcaMonstro:Int, rangeXP:ClosedRange<Int>, rangeCoin:ClosedRange<Int>) -> Inimigo{
+    let inimigo = Inimigo(nome: nomeMostro, vida: vidaMonstro, forca: forcaMonstro, exp: Int.random(in: rangeXP), dinheiroDropado: Int.random(in: rangeCoin))
     return inimigo
+}
+
+func criarItem(nomeItem: String, preco: Int, buff:Int ) -> Item{
+    let item = Item(nome: nomeItem, preco: preco, buff: buff)
+    return item
+}
+func criarLoja(setArmazem: Set<Item>) -> Loja{
+    let loja = Loja(armazem: setArmazem)
+    return loja
+}
+
+func comprarItem(loja : Loja, personagem : Heroi) -> Item{
+    let itens = loja.armazem
+
+    print("Digite o número do item que você deseja comprar")
+    if let entrada = readLine(), let escolha = Int(entrada), escolha > 0, escolha <= itens.count{
+        // let itemEscolhido = itens[escolha - 1]
+    }
+    
 }
 
 func combate(protagonista: Heroi, inimigo: Inimigo){
