@@ -1,31 +1,40 @@
+//
+//  main.swift
+//  Jogo
+//
+//  Created by ANDRE HOLOVATI on 14/11/25.
+//
+
+import Foundation
+
 let protagonista = criarPersonagem()
 
 //Criaturas
 let ne1 = criarInimigo(nomeMostro: "Espectro Nubloso", vidaMonstro: 28, forcaMonstro: 7, rangeXP: 15...35,rangeCoin: 1...30)
-let ne2 = criarInimigo(nomeMostro: "Lobo da Bruma", vidaMonstro: 32, forcaMonstro: 8, rangeXP: 20...40,rangeCoin: 1...40)
-let ne3 = criarInimigo(nomeMostro: "Sombréu Errante", vidaMonstro: 26, forcaMonstro: 6, rangeXP: 10...30,rangeCoin: 1...50)
-let ne4 = criarInimigo(nomeMostro: "Morto Enevoado", vidaMonstro: 35, forcaMonstro: 9, rangeXP: 25...45,rangeCoin: 1...60)
-let ne5 = criarInimigo(nomeMostro: "Vulto Dilacerado", vidaMonstro: 40, forcaMonstro: 10, rangeXP: 30...50,rangeCoin: 1...70)
-let fs1 = criarInimigo(nomeMostro: "Soldado Rubro", vidaMonstro: 45, forcaMonstro: 12, rangeXP: 30...55,rangeCoin: 1...80)
-let fs2 = criarInimigo(nomeMostro: "Carrasco de Ferro", vidaMonstro: 50, forcaMonstro: 14, rangeXP: 35...60,rangeCoin: 1...90)
-let fs3 = criarInimigo(nomeMostro: "Horrífero Carmesim", vidaMonstro: 42, forcaMonstro: 11, rangeXP: 25...50,rangeCoin: 1...100)
-let fs4 = criarInimigo(nomeMostro: "Guerreiro Escarlate", vidaMonstro: 55, forcaMonstro: 15, rangeXP: 40...70,rangeCoin: 1...110)
-let fs5 = criarInimigo(nomeMostro: "Fera Sangrenta", vidaMonstro: 60, forcaMonstro: 17, rangeXP: 45...75,rangeCoin: 1...120)
-let ss01 = criarInimigo(nomeMostro: "Cipó Venenoso", vidaMonstro: 38, forcaMonstro: 10, rangeXP: 25...45,rangeCoin: 1...130)
-let ss02 = criarInimigo(nomeMostro: "Onça Sussurrante", vidaMonstro: 48, forcaMonstro: 14, rangeXP: 35...60,rangeCoin: 1...140)
-let ss03 = criarInimigo(nomeMostro: "Esporo Andarilho", vidaMonstro: 36, forcaMonstro: 9, rangeXP: 20...40,rangeCoin: 1...150)
-let ss04 = criarInimigo(nomeMostro: "Guardião da Raiz", vidaMonstro: 52, forcaMonstro: 13, rangeXP: 40...70,rangeCoin: 1...160)
-let ss05 = criarInimigo(nomeMostro: "Predador da Folhumbra", vidaMonstro: 58, forcaMonstro: 15, rangeXP: 45...75,rangeCoin: 1...170)
-let pa01 = criarInimigo(nomeMostro: "Golem de Geada", vidaMonstro: 60, forcaMonstro: 16, rangeXP: 40...70,rangeCoin: 1...180)
-let pa02 = criarInimigo(nomeMostro: "Leopardo Gélido", vidaMonstro: 55, forcaMonstro: 15, rangeXP: 35...65,rangeCoin: 1...190)
-let pa03 = criarInimigo(nomeMostro: "Andarilho Invernal", vidaMonstro: 50, forcaMonstro: 13, rangeXP: 30...60,rangeCoin: 1...200)
-let pa04 = criarInimigo(nomeMostro: "Roc Congelado", vidaMonstro: 65, forcaMonstro: 17, rangeXP: 50...80,rangeCoin: 1...210)
-let pa05 = criarInimigo(nomeMostro: "Colosso da Aurora", vidaMonstro: 70, forcaMonstro: 18, rangeXP: 60...90,rangeCoin: 1...220)
-let cr01 = criarInimigo(nomeMostro: "Rachador Errante", vidaMonstro: 62, forcaMonstro: 18, rangeXP: 45...80,rangeCoin: 1...230)
-let cr02 = criarInimigo(nomeMostro: "Aberração Fraturada", vidaMonstro: 70, forcaMonstro: 20, rangeXP: 50...90,rangeCoin: 1...240)
-let cr03 = criarInimigo(nomeMostro: "Guerreiro Estilhaçado", vidaMonstro: 75, forcaMonstro: 21, rangeXP: 60...100,rangeCoin: 1...250)
-let cr04 = criarInimigo(nomeMostro: "Mutante da Fenda", vidaMonstro: 80, forcaMonstro: 23, rangeXP: 70...110,rangeCoin: 1...260)
-let cr05 = criarInimigo(nomeMostro: "Reptor do Abismo Urbano", vidaMonstro: 90, forcaMonstro: 25, rangeXP: 80...130,rangeCoin: 1...270)
+let ne2 = criarInimigo(nomeMostro: "Lobo da Bruma", vidaMonstro: 32, forcaMonstro: 8, rangeXP: 20...40,rangeCoin: 1...30)
+let ne3 = criarInimigo(nomeMostro: "Sombréu Errante", vidaMonstro: 26, forcaMonstro: 6, rangeXP: 10...30,rangeCoin: 1...30)
+let ne4 = criarInimigo(nomeMostro: "Morto Enevoado", vidaMonstro: 35, forcaMonstro: 9, rangeXP: 25...45,rangeCoin: 1...30)
+let ne5 = criarInimigo(nomeMostro: "Vulto Dilacerado", vidaMonstro: 40, forcaMonstro: 10, rangeXP: 30...50,rangeCoin: 1...30)
+let fs1 = criarInimigo(nomeMostro: "Soldado Rubro", vidaMonstro: 45, forcaMonstro: 14, rangeXP: 30...55,rangeCoin: 1...50)
+let fs2 = criarInimigo(nomeMostro: "Carrasco de Ferro", vidaMonstro: 50, forcaMonstro: 16, rangeXP: 35...60,rangeCoin: 1...50)
+let fs3 = criarInimigo(nomeMostro: "Horrífero Carmesim", vidaMonstro: 42, forcaMonstro: 12, rangeXP: 25...50,rangeCoin: 1...50)
+let fs4 = criarInimigo(nomeMostro: "Guerreiro Escarlate", vidaMonstro: 55, forcaMonstro: 18, rangeXP: 40...70,rangeCoin: 1...50)
+let fs5 = criarInimigo(nomeMostro: "Fera Sangrenta", vidaMonstro: 60, forcaMonstro: 20, rangeXP: 45...75,rangeCoin: 1...50)
+let ss01 = criarInimigo(nomeMostro: "Cipó Venenoso", vidaMonstro: 100, forcaMonstro: 21, rangeXP: 25...45,rangeCoin: 1...70)
+let ss02 = criarInimigo(nomeMostro: "Onça Sussurrante", vidaMonstro: 105, forcaMonstro: 24, rangeXP: 35...60,rangeCoin: 1...70)
+let ss03 = criarInimigo(nomeMostro: "Esporo Andarilho", vidaMonstro: 110, forcaMonstro: 18, rangeXP: 20...40,rangeCoin: 1...70)
+let ss04 = criarInimigo(nomeMostro: "Guardião da Raiz", vidaMonstro: 105, forcaMonstro: 27, rangeXP: 40...70,rangeCoin: 1...70)
+let ss05 = criarInimigo(nomeMostro: "Predador da Folhumbra", vidaMonstro: 90, forcaMonstro: 30, rangeXP: 45...75,rangeCoin: 1...70)
+let pa01 = criarInimigo(nomeMostro: "Golem de Geada", vidaMonstro: 160, forcaMonstro: 35, rangeXP: 40...70,rangeCoin: 1...90)
+let pa02 = criarInimigo(nomeMostro: "Leopardo Gélido", vidaMonstro: 155, forcaMonstro: 42, rangeXP: 35...65,rangeCoin: 1...90)
+let pa03 = criarInimigo(nomeMostro: "Andarilho Invernal", vidaMonstro: 150, forcaMonstro: 49, rangeXP: 30...60,rangeCoin: 1...90)
+let pa04 = criarInimigo(nomeMostro: "Roc Congelado", vidaMonstro: 120, forcaMonstro: 52, rangeXP: 50...80,rangeCoin: 1...90)
+let pa05 = criarInimigo(nomeMostro: "Colosso da Aurora", vidaMonstro: 170, forcaMonstro: 60, rangeXP: 60...90,rangeCoin: 1...90)
+let cr01 = criarInimigo(nomeMostro: "Rachador Errante", vidaMonstro: 162, forcaMonstro: 70, rangeXP: 45...80,rangeCoin: 1...110)
+let cr02 = criarInimigo(nomeMostro: "Aberração Fraturada", vidaMonstro: 170, forcaMonstro: 74, rangeXP: 50...90,rangeCoin: 1...110)
+let cr03 = criarInimigo(nomeMostro: "Guerreiro Estilhaçado", vidaMonstro: 175, forcaMonstro: 78, rangeXP: 60...100,rangeCoin: 1...110)
+let cr04 = criarInimigo(nomeMostro: "Mutante da Fenda", vidaMonstro: 180, forcaMonstro: 82, rangeXP: 70...110,rangeCoin: 1...110)
+let cr05 = criarInimigo(nomeMostro: "Reptor do Abismo Urbano", vidaMonstro: 190, forcaMonstro: 88, rangeXP: 80...130,rangeCoin: 1...110)
 
 //Armazenando Mobs de cada Regiao
 var arrInimigos1 = [ne1,ne2,ne3,ne4,ne5]
@@ -83,10 +92,51 @@ mapa.append(Mapa(nome: "Selva dos sussurro"))
 mapa.append(Mapa(nome: "Picos do alvorecer"))
 mapa.append(Mapa(nome: "Cidades rachadas"))
 
-let espada1 = criarItem(nomeItem: "Espada Enferrujada", preco: 50, buff: 20)
-let escudo = criarItem(nomeItem: "Escudo Despedaçado", preco: 50, buff: 20)
+let item1  = criarItem(id: 1, nomeItem: "Espada Enferrujada", preco: 30, buff: 10)
+let item2  = criarItem(id: 2, nomeItem: "Escudo Despedaçado", preco: 35, buff: 12)
+let item3  = criarItem(id: 3, nomeItem: "Bota Desgastada", preco: 28, buff: 8)
+let item4  = criarItem(id: 4, nomeItem: "Capacete Velho", preco: 40, buff: 14)
+let item5  = criarItem(id: 5, nomeItem: "Luva Rasgada", preco: 32, buff: 9)
+let item6  = criarItem(id: 6, nomeItem: "Peitoral Rachado", preco: 55, buff: 18)
+let item7  = criarItem(id: 7, nomeItem: "Calça de couro", preco: 50, buff: 20)
+let item8  = criarItem(id: 8, nomeItem: "Adaga de latao", preco: 60, buff: 16)
+let item9  = criarItem(id: 9, nomeItem: "Arco Torto", preco: 50, buff: 17)
+let item10 = criarItem(id: 10, nomeItem: "Cajado Quebrado", preco: 42, buff: 15)
+let item11 = criarItem(id: 11, nomeItem: "Machado Enferrujado", preco: 60, buff: 20)
+let item12 = criarItem(id: 12, nomeItem: "Espada com Lasca", preco: 70, buff: 22)
+let item13 = criarItem(id: 13, nomeItem: "Escudo de ferro", preco: 100, buff: 30)
+let item14 = criarItem(id: 14, nomeItem: "Elmo de ferro", preco: 130, buff: 30)
+let item15 = criarItem(id: 15, nomeItem: "Bota de ferro", preco: 150, buff: 30)
+let item16 = criarItem(id: 16, nomeItem: "Martelo dourado", preco: 250, buff: 30)
+let item17 = criarItem(id: 17, nomeItem: "Adaga Envenenada", preco: 420, buff: 40)
+let item18 = criarItem(id: 18, nomeItem: "Luva de Escama de Draugr", preco: 1200, buff: 50)
+let item19 = criarItem(id: 19, nomeItem: "Mangual Enfeiticado ", preco: 1300, buff: 30)
+let item20 = criarItem(id: 20, nomeItem: "Bastão Shaolin", preco: 1400, buff: 40)
+let item21 = criarItem(id: 21, nomeItem: "Capa da Invisibilidade", preco: 1600, buff: 70)
+let item22 = criarItem(id: 22, nomeItem: "Bracelete enfeiticado", preco: 1800, buff: 80)
+let item23 = criarItem(id: 23, nomeItem: "Broquel dos anoes", preco: 1200, buff: 65)
+let item24 = criarItem(id: 24, nomeItem: "Excalibur", preco: 1500, buff: 150)
+let item25 = criarItem(id: 25, nomeItem: "Escudo de Madeira Velho", preco: 40, buff: 13)
+let item26 = criarItem(id: 26, nomeItem: "Cajado de Merlin", preco: 5000, buff: 100)
+let item27 = criarItem(id: 27, nomeItem: "Arco de fogo", preco: 5000, buff: 100)
+let item28 = criarItem(id: 28, nomeItem: "Bota encandecente", preco: 5000, buff: 100)
+let item29 = criarItem(id: 29, nomeItem: "Elmo encandecente", preco: 5000, buff: 100)
+let item30 = criarItem(id: 30, nomeItem: "Peitoral encandecente", preco: 5000, buff: 100)
 
-let setArmazem: Set<Item> = [espada1,escudo]
+
+
+
+
+var setArmazem: [Item] = []
+setArmazem.append(contentsOf: [
+    item1, item2, item3,
+    item4, item5, item6, item7, item8, item9, item10,
+    item11, item12, item13, item14, item15,
+    item16, item17, item18, item19, item20,
+    item21, item22, item23, item24, item25,
+    item26, item27, item28, item29, item30
+])
+
 
 var loja = criarLoja(setArmazem: setArmazem)
 
@@ -101,13 +151,14 @@ repeat {
     print("-------- O SONHO --------")
     print("Escolha alguma opcao:")
     print("1) Verificar Status")
-    print("2) Verificar Mapa")
-    print("3) Loja")
-    print("4) Viajar")
-    print("5) Caçar Monstros")
-    print("6) Curar")
-    print("7) Enfrentar Miniboss")
-    print("8) Enfrentar Boss")
+    print("2) Verificar Inventario")
+    print("3) Verificar Mapa")
+    print("4) Loja")
+    print("5) Viajar")
+    print("6) Caçar Monstros")
+    print("7) Curar")
+    print("8) Enfrentar Miniboss")
+    print("9) Enfrentar Boss")
 
     let opt = Int(readLine() ?? "") ?? 0
 
@@ -115,18 +166,147 @@ repeat {
 
     case 1:
         protagonista.verificarStatus()
-
     case 2:
+        protagonista.verificarInventario()
+    case 3:
         print("----- Mapa Do Sonho -----")
         for i in 0..<mapa.count {
             print("\(i+1)) \(mapa[i].nome)")
         }
         print("-------------------------")
-    case 3:
-      print("----- Loja -----")
-      loja.verificarLoja()
-      
     case 4:
+      print("----- Loja -----")
+        loja.verificarLoja()
+        let x = comprarItem(loja: loja, personagem: protagonista)
+        switch x.id{
+        case 1:
+            if compraVeridica(protagonista: protagonista, x: x){
+                protagonista.forca += x.buff
+            }
+        case 2:
+            if compraVeridica(protagonista: protagonista, x: x){
+                protagonista.vidaMaxima += x.buff
+            }
+        case 3:
+            if compraVeridica(protagonista: protagonista, x: x){
+                protagonista.vidaMaxima += x.buff
+            }
+        case 4:
+            if compraVeridica(protagonista: protagonista, x: x){
+                protagonista.vidaMaxima += x.buff
+            }
+        case 5:
+            if compraVeridica(protagonista: protagonista, x: x){
+                protagonista.vidaMaxima += x.buff
+            }
+        case 6:
+            if compraVeridica(protagonista: protagonista, x: x){
+                protagonista.vidaMaxima += x.buff
+            }
+        case 7:
+            if compraVeridica(protagonista: protagonista, x: x){
+                protagonista.vidaMaxima += x.buff
+            }
+        case 8:
+            if compraVeridica(protagonista: protagonista, x: x){
+                protagonista.forca += x.buff
+            }
+        case 9:
+            if compraVeridica(protagonista: protagonista, x: x){
+                protagonista.forca += x.buff
+            }
+        case 10:
+            if compraVeridica(protagonista: protagonista, x: x){
+                protagonista.forca += x.buff
+            }
+        case 11:
+            if compraVeridica(protagonista: protagonista, x: x){
+                protagonista.forca += x.buff
+            }
+        case 12:
+            if compraVeridica(protagonista: protagonista, x: x){
+                protagonista.forca += x.buff
+            }
+        case 13:
+            if compraVeridica(protagonista: protagonista, x: x){
+                protagonista.vidaMaxima += x.buff
+            }
+        case 14:
+            if compraVeridica(protagonista: protagonista, x: x){
+                protagonista.vidaMaxima += x.buff
+            }
+        case 15:
+            if compraVeridica(protagonista: protagonista, x: x){
+                protagonista.vidaMaxima += x.buff
+            }
+        case 16:
+            if compraVeridica(protagonista: protagonista, x: x){
+                protagonista.forca += x.buff
+            }
+        case 17:
+            if compraVeridica(protagonista: protagonista, x: x){
+                protagonista.forca += x.buff
+            }
+        case 18:
+            if compraVeridica(protagonista: protagonista, x: x){
+                protagonista.vidaMaxima += x.buff
+            }
+        case 19:
+            if compraVeridica(protagonista: protagonista, x: x){
+                protagonista.forca += x.buff
+            }
+        case 20:
+            if compraVeridica(protagonista: protagonista, x: x){
+                protagonista.forca += x.buff
+            }
+        case 21:
+            if compraVeridica(protagonista: protagonista, x: x){
+                protagonista.vidaMaxima += x.buff
+            }
+        case 22:
+            if compraVeridica(protagonista: protagonista, x: x){
+                protagonista.vidaMaxima += x.buff
+            }
+        case 23:
+            if compraVeridica(protagonista: protagonista, x: x){
+                protagonista.forca += x.buff
+            }
+        case 24:
+            if compraVeridica(protagonista: protagonista, x: x){
+                protagonista.forca += x.buff
+            }
+        case 25:
+            if compraVeridica(protagonista: protagonista, x: x){
+                protagonista.vidaMaxima += x.buff
+            }
+        case 26:
+            if compraVeridica(protagonista: protagonista, x: x){
+                protagonista.forca += x.buff
+            }
+        case 27:
+            if compraVeridica(protagonista: protagonista, x: x){
+                protagonista.forca += x.buff
+            }
+        case 28:
+            if compraVeridica(protagonista: protagonista, x: x){
+                protagonista.vidaMaxima += x.buff
+            }
+        case 29:
+            if compraVeridica(protagonista: protagonista, x: x){
+                protagonista.vidaMaxima += x.buff
+            }
+        case 30:
+            if compraVeridica(protagonista: protagonista, x: x){
+                protagonista.vidaMaxima += x.buff
+            }
+            
+            
+            
+        default:
+            print("Item nao identificado")
+        }
+        
+    case 5:
         if regiao == 0 && miniBossesDerrotados1 == 5 && boss1Derrotado == 1{ regiao = 1 }
         else if regiao == 1 && miniBossesDerrotados2 == 5 && boss2Derrotado == 1{ regiao = 2 }
         else if regiao == 2 && miniBossesDerrotados3 == 5 && boss3Derrotado == 1{ regiao = 3 }
@@ -139,7 +319,7 @@ repeat {
 
         print("Você viajou para \(mapa[regiao].nome)")
 
-    case 5:
+    case 6:
         switch regiao {
         case 0: combate(protagonista: protagonista, inimigo: arrInimigos1.randomElement()!)
         case 1: combate(protagonista: protagonista, inimigo: arrInimigos2.randomElement()!)
@@ -150,10 +330,10 @@ repeat {
         }
         protagonista.ResetCura()
 
-    case 6:
+    case 7:
         protagonista.curar()
 
-    case 7:
+    case 8:
         switch regiao {
         case 0:
         if miniBossesDerrotados1 >= arrMiniBoss1.count {
@@ -177,7 +357,7 @@ repeat {
          if miniBossesDerrotados3 >= arrMiniBoss3.count {
             print("Voce ja derrotou todos os minibosses desta regiao")
             break
-        } 
+        }
             let reg3 = combateMb(protagonista: protagonista, inimigo: arrMiniBoss3[miniBossesDerrotados3])
             if reg3{
                 miniBossesDerrotados3+=1
@@ -203,7 +383,7 @@ repeat {
         default:
             print("Nenhum miniboss aqui.")
         }
-    case 8:
+    case 9:
     switch regiao{
         case 0:
         if boss1Derrotado == 1 {
@@ -282,4 +462,6 @@ repeat {
 } while protagonista.vida > 0
 
     
+
+
 

@@ -1,3 +1,10 @@
+//
+//  Heroi.swift
+//  Jogo
+//
+//  Created by ANDRE HOLOVATI on 14/11/25.
+//
+
 class Heroi {
  var nome  :String
  var vida  :Int
@@ -7,7 +14,7 @@ class Heroi {
  var vidaMaxima :Int
  var jaCurou = false
  var dinheiro : Int = 0
-//  var inventario : Set<Item> 
+    var inventario : [Item] = []
 
 
   init(nome:String, vida:Int,forca:Int,nivel:Int,xp:Int,vidaMaxima:Int){
@@ -22,7 +29,7 @@ class Heroi {
    func subirNivel(){
       let nivelParaEvoluir = nivel * 100
       if(xp >= nivelParaEvoluir){
-         print("\(nome) evoluiu para o nível \(nivel + 1)")  
+         print("\(nome) evoluiu para o nível \(nivel + 1)")
       nivel += 1
       forca += 5
       vidaMaxima += 10
@@ -36,10 +43,18 @@ class Heroi {
       print("Vida: \(vida) [Max: \(vidaMaxima)]")
       print("Forca: \(forca)")
       print("XP: \(xp) - \((nivel * 100) - xp) para evoluir")
-          
+       print("Dinheiro \(dinheiro)")
    }
+    func verificarInventario(){
+        print("----- Inventario de \(nome) -----")
+        var index = 1
+        for item in inventario{
+            print("\(index))\(item.nome)")
+            index += 1
+        }
+    }
 
-   func curar(){  
+   func curar(){
       if(jaCurou){
       print("Você ja se curou nessa caçada")
       return
