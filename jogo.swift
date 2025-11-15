@@ -12,7 +12,7 @@
 func criarPersonagem() -> Heroi{
     print("Digite o seu nome aventureiro")
 let iniciarPersonagem = readLine() ?? ""
-let personagem = Heroi(nome: iniciarPersonagem, vida: 20,forca: 10000,nivel: 1,xp: 0,vidaMaxima: 20)
+let personagem = Heroi(nome: iniciarPersonagem, vida: 20,forca: 20,nivel: 1,xp: 0,vidaMaxima: 20)
 print("Seja bem vindo ao sonho \(personagem.nome)")
 return personagem
 }
